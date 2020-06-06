@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "JRUIOC"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "__"
   spec.description  = '构建tableview,collectionview,弹出框 oc版本'
 
@@ -17,8 +17,12 @@ Pod::Spec.new do |spec|
   spec.author             = { "梁嘉仁" => "50839393@qq.com" }
   spec.platform     = :ios, "11.0"
 
-  spec.source       = { :git => "https://github.com/jiaren0204/JRUIOC.git", :tag => "0.0.3" }
-  spec.source_files  = "JRUIOC/JRUIOC", "JRUIOC/JRUIOC/**/*.{h,m}"
+  spec.source       = { :git => "https://github.com/jiaren0204/JRUIOC.git", :tag => "0.0.4" }
+
+  spec.subspec 'JRTableViewManager' do |table|
+    table.source_files = 'JRUIOC/JRUIOC/JRTableViewManager/**/*'
+  end
+  # spec.source_files  = "JRUIOC/JRUIOC", "JRUIOC/JRUIOC/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
