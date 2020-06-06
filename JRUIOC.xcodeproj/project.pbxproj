@@ -20,6 +20,18 @@
 		DABD2DF0248B80D000E94E42 /* JRTableViewHeaderFooterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2DE8248B80D000E94E42 /* JRTableViewHeaderFooterItem.m */; };
 		DABD2DF1248B80D000E94E42 /* JRTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2DEB248B80D000E94E42 /* JRTableViewManager.m */; };
 		DABD2DF2248B80D000E94E42 /* JRTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2DEC248B80D000E94E42 /* JRTableViewSection.m */; };
+		DABD2E1A248B918F00E94E42 /* JRCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E0C248B918F00E94E42 /* JRCollectionViewItem.m */; };
+		DABD2E1B248B918F00E94E42 /* JRCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E0D248B918F00E94E42 /* JRCollectionViewCell.m */; };
+		DABD2E1C248B918F00E94E42 /* JRCollectionViewHeaderFooterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E0F248B918F00E94E42 /* JRCollectionViewHeaderFooterItem.m */; };
+		DABD2E1D248B918F00E94E42 /* JRCustomSizeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E11248B918F00E94E42 /* JRCustomSizeLayout.m */; };
+		DABD2E1E248B918F00E94E42 /* JRCollectionHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E13248B918F00E94E42 /* JRCollectionHeaderFooterView.m */; };
+		DABD2E1F248B918F00E94E42 /* JRCollectionViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E16248B918F00E94E42 /* JRCollectionViewSection.m */; };
+		DABD2E20248B918F00E94E42 /* JRCollectionViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E17248B918F00E94E42 /* JRCollectionViewManager.m */; };
+		DABD2E39248B924100E94E42 /* JRPopAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E34248B924100E94E42 /* JRPopAttributes.m */; };
+		DABD2E3A248B924100E94E42 /* JRPopUpContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E35248B924100E94E42 /* JRPopUpContentView.m */; };
+		DABD2E3B248B924100E94E42 /* JRPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E36248B924100E94E42 /* JRPopUpView.m */; };
+		DABD2E3C248B924100E94E42 /* JRPopupViewBaseAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E38248B924100E94E42 /* JRPopupViewBaseAnimator.m */; };
+		DABD2E40248B932E00E94E42 /* UIView+JRUIOC.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2E3F248B932E00E94E42 /* UIView+JRUIOC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +60,30 @@
 		DABD2DEA248B80D000E94E42 /* JRTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewItem.h; sourceTree = "<group>"; };
 		DABD2DEB248B80D000E94E42 /* JRTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewManager.m; sourceTree = "<group>"; };
 		DABD2DEC248B80D000E94E42 /* JRTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewSection.m; sourceTree = "<group>"; };
+		DABD2E0B248B918F00E94E42 /* JRCollectionViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCollectionViewSection.h; sourceTree = "<group>"; };
+		DABD2E0C248B918F00E94E42 /* JRCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCollectionViewItem.m; sourceTree = "<group>"; };
+		DABD2E0D248B918F00E94E42 /* JRCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCollectionViewCell.m; sourceTree = "<group>"; };
+		DABD2E0E248B918F00E94E42 /* JRCollectionViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCollectionViewManager.h; sourceTree = "<group>"; };
+		DABD2E0F248B918F00E94E42 /* JRCollectionViewHeaderFooterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCollectionViewHeaderFooterItem.m; sourceTree = "<group>"; };
+		DABD2E11248B918F00E94E42 /* JRCustomSizeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCustomSizeLayout.m; sourceTree = "<group>"; };
+		DABD2E12248B918F00E94E42 /* JRCustomSizeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCustomSizeLayout.h; sourceTree = "<group>"; };
+		DABD2E13248B918F00E94E42 /* JRCollectionHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCollectionHeaderFooterView.m; sourceTree = "<group>"; };
+		DABD2E14248B918F00E94E42 /* JRCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCollectionViewCell.h; sourceTree = "<group>"; };
+		DABD2E15248B918F00E94E42 /* JRCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCollectionViewItem.h; sourceTree = "<group>"; };
+		DABD2E16248B918F00E94E42 /* JRCollectionViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCollectionViewSection.m; sourceTree = "<group>"; };
+		DABD2E17248B918F00E94E42 /* JRCollectionViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCollectionViewManager.m; sourceTree = "<group>"; };
+		DABD2E18248B918F00E94E42 /* JRCollectionViewHeaderFooterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCollectionViewHeaderFooterItem.h; sourceTree = "<group>"; };
+		DABD2E19248B918F00E94E42 /* JRCollectionHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCollectionHeaderFooterView.h; sourceTree = "<group>"; };
+		DABD2E30248B924100E94E42 /* JRPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopUpView.h; sourceTree = "<group>"; };
+		DABD2E31248B924100E94E42 /* JRPopUpContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopUpContentView.h; sourceTree = "<group>"; };
+		DABD2E33248B924100E94E42 /* JRPopupViewBaseAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopupViewBaseAnimator.h; sourceTree = "<group>"; };
+		DABD2E34248B924100E94E42 /* JRPopAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopAttributes.m; sourceTree = "<group>"; };
+		DABD2E35248B924100E94E42 /* JRPopUpContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopUpContentView.m; sourceTree = "<group>"; };
+		DABD2E36248B924100E94E42 /* JRPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopUpView.m; sourceTree = "<group>"; };
+		DABD2E37248B924100E94E42 /* JRPopAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopAttributes.h; sourceTree = "<group>"; };
+		DABD2E38248B924100E94E42 /* JRPopupViewBaseAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopupViewBaseAnimator.m; sourceTree = "<group>"; };
+		DABD2E3E248B932E00E94E42 /* UIView+JRUIOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JRUIOC.h"; sourceTree = "<group>"; };
+		DABD2E3F248B932E00E94E42 /* UIView+JRUIOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JRUIOC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +137,9 @@
 			children = (
 				DABD2DDF248B80D000E94E42 /* JRUIOC.h */,
 				DABD2DE0248B80D000E94E42 /* JRTableViewManager */,
+				DABD2E0A248B918F00E94E42 /* JRCollectionViewManager */,
+				DABD2E2F248B924100E94E42 /* JRPopUpView */,
+				DABD2E3D248B931800E94E42 /* Util */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -108,20 +147,73 @@
 		DABD2DE0248B80D000E94E42 /* JRTableViewManager */ = {
 			isa = PBXGroup;
 			children = (
-				DABD2DE1248B80D000E94E42 /* JRTableViewHeaderFooterView.h */,
-				DABD2DE2248B80D000E94E42 /* JRTableViewItem.m */,
+				DABD2DE9248B80D000E94E42 /* JRTableViewCell.h */,
 				DABD2DE3248B80D000E94E42 /* JRTableViewCell.m */,
 				DABD2DE4248B80D000E94E42 /* JRTableViewHeaderFooterItem.h */,
-				DABD2DE5248B80D000E94E42 /* JRTableViewManager.h */,
-				DABD2DE6248B80D000E94E42 /* JRTableViewSection.h */,
-				DABD2DE7248B80D000E94E42 /* JRTableViewHeaderFooterView.m */,
 				DABD2DE8248B80D000E94E42 /* JRTableViewHeaderFooterItem.m */,
-				DABD2DE9248B80D000E94E42 /* JRTableViewCell.h */,
+				DABD2DE1248B80D000E94E42 /* JRTableViewHeaderFooterView.h */,
+				DABD2DE7248B80D000E94E42 /* JRTableViewHeaderFooterView.m */,
 				DABD2DEA248B80D000E94E42 /* JRTableViewItem.h */,
+				DABD2DE2248B80D000E94E42 /* JRTableViewItem.m */,
+				DABD2DE5248B80D000E94E42 /* JRTableViewManager.h */,
 				DABD2DEB248B80D000E94E42 /* JRTableViewManager.m */,
+				DABD2DE6248B80D000E94E42 /* JRTableViewSection.h */,
 				DABD2DEC248B80D000E94E42 /* JRTableViewSection.m */,
 			);
 			path = JRTableViewManager;
+			sourceTree = "<group>";
+		};
+		DABD2E0A248B918F00E94E42 /* JRCollectionViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				DABD2E19248B918F00E94E42 /* JRCollectionHeaderFooterView.h */,
+				DABD2E13248B918F00E94E42 /* JRCollectionHeaderFooterView.m */,
+				DABD2E14248B918F00E94E42 /* JRCollectionViewCell.h */,
+				DABD2E0D248B918F00E94E42 /* JRCollectionViewCell.m */,
+				DABD2E18248B918F00E94E42 /* JRCollectionViewHeaderFooterItem.h */,
+				DABD2E0F248B918F00E94E42 /* JRCollectionViewHeaderFooterItem.m */,
+				DABD2E15248B918F00E94E42 /* JRCollectionViewItem.h */,
+				DABD2E0C248B918F00E94E42 /* JRCollectionViewItem.m */,
+				DABD2E0E248B918F00E94E42 /* JRCollectionViewManager.h */,
+				DABD2E17248B918F00E94E42 /* JRCollectionViewManager.m */,
+				DABD2E0B248B918F00E94E42 /* JRCollectionViewSection.h */,
+				DABD2E16248B918F00E94E42 /* JRCollectionViewSection.m */,
+				DABD2E10248B918F00E94E42 /* Layout */,
+			);
+			path = JRCollectionViewManager;
+			sourceTree = "<group>";
+		};
+		DABD2E10248B918F00E94E42 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				DABD2E11248B918F00E94E42 /* JRCustomSizeLayout.m */,
+				DABD2E12248B918F00E94E42 /* JRCustomSizeLayout.h */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		DABD2E2F248B924100E94E42 /* JRPopUpView */ = {
+			isa = PBXGroup;
+			children = (
+				DABD2E37248B924100E94E42 /* JRPopAttributes.h */,
+				DABD2E34248B924100E94E42 /* JRPopAttributes.m */,
+				DABD2E31248B924100E94E42 /* JRPopUpContentView.h */,
+				DABD2E35248B924100E94E42 /* JRPopUpContentView.m */,
+				DABD2E30248B924100E94E42 /* JRPopUpView.h */,
+				DABD2E36248B924100E94E42 /* JRPopUpView.m */,
+				DABD2E33248B924100E94E42 /* JRPopupViewBaseAnimator.h */,
+				DABD2E38248B924100E94E42 /* JRPopupViewBaseAnimator.m */,
+			);
+			path = JRPopUpView;
+			sourceTree = "<group>";
+		};
+		DABD2E3D248B931800E94E42 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DABD2E3E248B932E00E94E42 /* UIView+JRUIOC.h */,
+				DABD2E3F248B932E00E94E42 /* UIView+JRUIOC.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,14 +286,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABD2E1B248B918F00E94E42 /* JRCollectionViewCell.m in Sources */,
 				049CA4CA247E03FE0024A130 /* ViewController.m in Sources */,
+				DABD2E40248B932E00E94E42 /* UIView+JRUIOC.m in Sources */,
 				DABD2DED248B80D000E94E42 /* JRTableViewItem.m in Sources */,
 				DABD2DF1248B80D000E94E42 /* JRTableViewManager.m in Sources */,
+				DABD2E1C248B918F00E94E42 /* JRCollectionViewHeaderFooterItem.m in Sources */,
 				049CA4C4247E03FE0024A130 /* AppDelegate.m in Sources */,
+				DABD2E1E248B918F00E94E42 /* JRCollectionHeaderFooterView.m in Sources */,
+				DABD2E3B248B924100E94E42 /* JRPopUpView.m in Sources */,
+				DABD2E3A248B924100E94E42 /* JRPopUpContentView.m in Sources */,
+				DABD2E3C248B924100E94E42 /* JRPopupViewBaseAnimator.m in Sources */,
 				DABD2DEE248B80D000E94E42 /* JRTableViewCell.m in Sources */,
+				DABD2E1D248B918F00E94E42 /* JRCustomSizeLayout.m in Sources */,
 				049CA4D5247E03FF0024A130 /* main.m in Sources */,
 				DABD2DEF248B80D000E94E42 /* JRTableViewHeaderFooterView.m in Sources */,
 				DABD2DF2248B80D000E94E42 /* JRTableViewSection.m in Sources */,
+				DABD2E1F248B918F00E94E42 /* JRCollectionViewSection.m in Sources */,
+				DABD2E20248B918F00E94E42 /* JRCollectionViewManager.m in Sources */,
+				DABD2E39248B924100E94E42 /* JRPopAttributes.m in Sources */,
+				DABD2E1A248B918F00E94E42 /* JRCollectionViewItem.m in Sources */,
 				DABD2DF0248B80D000E94E42 /* JRTableViewHeaderFooterItem.m in Sources */,
 				049CA4C7247E03FE0024A130 /* SceneDelegate.m in Sources */,
 			);

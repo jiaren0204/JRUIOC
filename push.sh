@@ -1,3 +1,3 @@
 cd `dirname $0`
 
-pod trunk push JRUIOC.podspec --allow-warnings --use-libraries
+pod trunk push JRUIOC.podspec --verbose --allow-warnings --use-libraries
