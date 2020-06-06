@@ -6,13 +6,13 @@
 //  Copyright © 2020 jiaren. All rights reserved.
 //
 
-// 0.0.9
+// 0.1.0
 
 #ifndef JRUIOC_h
 #define JRUIOC_h
 
 #import "JRTableViewManager.h"
 #import "JRCollectionViewManager.h"
-#import "JRPopUpView.h"
+//#import "JRPopUpView.h"
 
 #endif /* JRUIOC_h */
