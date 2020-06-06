@@ -14,12 +14,12 @@
 		049CA4CF247E03FF0024A130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049CA4CE247E03FF0024A130 /* Assets.xcassets */; };
 		049CA4D2247E03FF0024A130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049CA4D0247E03FF0024A130 /* LaunchScreen.storyboard */; };
 		049CA4D5247E03FF0024A130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049CA4D4247E03FF0024A130 /* main.m */; };
-		049CA4E9247E04780024A130 /* JRTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 049CA4DE247E04780024A130 /* JRTableViewItem.m */; };
-		049CA4EA247E04780024A130 /* JRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 049CA4DF247E04780024A130 /* JRTableViewCell.m */; };
-		049CA4EB247E04780024A130 /* JRTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049CA4E3247E04780024A130 /* JRTableViewHeaderFooterView.m */; };
-		049CA4EC247E04780024A130 /* JRTableViewHeaderFooterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 049CA4E4247E04780024A130 /* JRTableViewHeaderFooterItem.m */; };
-		049CA4ED247E04780024A130 /* JRTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 049CA4E7247E04780024A130 /* JRTableViewManager.m */; };
-		049CA4EE247E04780024A130 /* JRTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 049CA4E8247E04780024A130 /* JRTableViewSection.m */; };
+		DABD2DED248B80D000E94E42 /* JRTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2DE2248B80D000E94E42 /* JRTableViewItem.m */; };
+		DABD2DEE248B80D000E94E42 /* JRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2DE3248B80D000E94E42 /* JRTableViewCell.m */; };
+		DABD2DEF248B80D000E94E42 /* JRTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2DE7248B80D000E94E42 /* JRTableViewHeaderFooterView.m */; };
+		DABD2DF0248B80D000E94E42 /* JRTableViewHeaderFooterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2DE8248B80D000E94E42 /* JRTableViewHeaderFooterItem.m */; };
+		DABD2DF1248B80D000E94E42 /* JRTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2DEB248B80D000E94E42 /* JRTableViewManager.m */; };
+		DABD2DF2248B80D000E94E42 /* JRTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = DABD2DEC248B80D000E94E42 /* JRTableViewSection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,19 +35,19 @@
 		049CA4D1247E03FF0024A130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049CA4D3247E03FF0024A130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049CA4D4247E03FF0024A130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		049CA4DD247E04780024A130 /* JRTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewHeaderFooterView.h; sourceTree = "<group>"; };
-		049CA4DE247E04780024A130 /* JRTableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewItem.m; sourceTree = "<group>"; };
-		049CA4DF247E04780024A130 /* JRTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewCell.m; sourceTree = "<group>"; };
-		049CA4E0247E04780024A130 /* JRTableViewHeaderFooterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewHeaderFooterItem.h; sourceTree = "<group>"; };
-		049CA4E1247E04780024A130 /* JRTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewManager.h; sourceTree = "<group>"; };
-		049CA4E2247E04780024A130 /* JRTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewSection.h; sourceTree = "<group>"; };
-		049CA4E3247E04780024A130 /* JRTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewHeaderFooterView.m; sourceTree = "<group>"; };
-		049CA4E4247E04780024A130 /* JRTableViewHeaderFooterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewHeaderFooterItem.m; sourceTree = "<group>"; };
-		049CA4E5247E04780024A130 /* JRTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewCell.h; sourceTree = "<group>"; };
-		049CA4E6247E04780024A130 /* JRTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewItem.h; sourceTree = "<group>"; };
-		049CA4E7247E04780024A130 /* JRTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewManager.m; sourceTree = "<group>"; };
-		049CA4E8247E04780024A130 /* JRTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewSection.m; sourceTree = "<group>"; };
-		049CA4F0247E04A20024A130 /* JRUIOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRUIOC.h; sourceTree = "<group>"; };
+		DABD2DDF248B80D000E94E42 /* JRUIOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRUIOC.h; sourceTree = "<group>"; };
+		DABD2DE1248B80D000E94E42 /* JRTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		DABD2DE2248B80D000E94E42 /* JRTableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewItem.m; sourceTree = "<group>"; };
+		DABD2DE3248B80D000E94E42 /* JRTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewCell.m; sourceTree = "<group>"; };
+		DABD2DE4248B80D000E94E42 /* JRTableViewHeaderFooterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewHeaderFooterItem.h; sourceTree = "<group>"; };
+		DABD2DE5248B80D000E94E42 /* JRTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewManager.h; sourceTree = "<group>"; };
+		DABD2DE6248B80D000E94E42 /* JRTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewSection.h; sourceTree = "<group>"; };
+		DABD2DE7248B80D000E94E42 /* JRTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		DABD2DE8248B80D000E94E42 /* JRTableViewHeaderFooterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewHeaderFooterItem.m; sourceTree = "<group>"; };
+		DABD2DE9248B80D000E94E42 /* JRTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewCell.h; sourceTree = "<group>"; };
+		DABD2DEA248B80D000E94E42 /* JRTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTableViewItem.h; sourceTree = "<group>"; };
+		DABD2DEB248B80D000E94E42 /* JRTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewManager.m; sourceTree = "<group>"; };
+		DABD2DEC248B80D000E94E42 /* JRTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTableViewSection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 		049CA4C1247E03FE0024A130 /* JRUIOC */ = {
 			isa = PBXGroup;
 			children = (
-				049CA4DB247E04640024A130 /* JRUIOC */,
+				DABD2DDE248B80D000E94E42 /* Classes */,
 				049CA4C2247E03FE0024A130 /* AppDelegate.h */,
 				049CA4C3247E03FE0024A130 /* AppDelegate.m */,
 				049CA4C5247E03FE0024A130 /* SceneDelegate.h */,
@@ -96,30 +96,30 @@
 			path = JRUIOC;
 			sourceTree = "<group>";
 		};
-		049CA4DB247E04640024A130 /* JRUIOC */ = {
+		DABD2DDE248B80D000E94E42 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				049CA4F0247E04A20024A130 /* JRUIOC.h */,
-				049CA4DC247E04780024A130 /* JRTableViewManager */,
+				DABD2DDF248B80D000E94E42 /* JRUIOC.h */,
+				DABD2DE0248B80D000E94E42 /* JRTableViewManager */,
 			);
-			path = JRUIOC;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		049CA4DC247E04780024A130 /* JRTableViewManager */ = {
+		DABD2DE0248B80D000E94E42 /* JRTableViewManager */ = {
 			isa = PBXGroup;
 			children = (
-				049CA4E5247E04780024A130 /* JRTableViewCell.h */,
-				049CA4DF247E04780024A130 /* JRTableViewCell.m */,
-				049CA4E0247E04780024A130 /* JRTableViewHeaderFooterItem.h */,
-				049CA4E4247E04780024A130 /* JRTableViewHeaderFooterItem.m */,
-				049CA4DD247E04780024A130 /* JRTableViewHeaderFooterView.h */,
-				049CA4E3247E04780024A130 /* JRTableViewHeaderFooterView.m */,
-				049CA4E6247E04780024A130 /* JRTableViewItem.h */,
-				049CA4DE247E04780024A130 /* JRTableViewItem.m */,
-				049CA4E1247E04780024A130 /* JRTableViewManager.h */,
-				049CA4E7247E04780024A130 /* JRTableViewManager.m */,
-				049CA4E2247E04780024A130 /* JRTableViewSection.h */,
-				049CA4E8247E04780024A130 /* JRTableViewSection.m */,
+				DABD2DE1248B80D000E94E42 /* JRTableViewHeaderFooterView.h */,
+				DABD2DE2248B80D000E94E42 /* JRTableViewItem.m */,
+				DABD2DE3248B80D000E94E42 /* JRTableViewCell.m */,
+				DABD2DE4248B80D000E94E42 /* JRTableViewHeaderFooterItem.h */,
+				DABD2DE5248B80D000E94E42 /* JRTableViewManager.h */,
+				DABD2DE6248B80D000E94E42 /* JRTableViewSection.h */,
+				DABD2DE7248B80D000E94E42 /* JRTableViewHeaderFooterView.m */,
+				DABD2DE8248B80D000E94E42 /* JRTableViewHeaderFooterItem.m */,
+				DABD2DE9248B80D000E94E42 /* JRTableViewCell.h */,
+				DABD2DEA248B80D000E94E42 /* JRTableViewItem.h */,
+				DABD2DEB248B80D000E94E42 /* JRTableViewManager.m */,
+				DABD2DEC248B80D000E94E42 /* JRTableViewSection.m */,
 			);
 			path = JRTableViewManager;
 			sourceTree = "<group>";
@@ -195,14 +195,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				049CA4CA247E03FE0024A130 /* ViewController.m in Sources */,
-				049CA4E9247E04780024A130 /* JRTableViewItem.m in Sources */,
-				049CA4ED247E04780024A130 /* JRTableViewManager.m in Sources */,
+				DABD2DED248B80D000E94E42 /* JRTableViewItem.m in Sources */,
+				DABD2DF1248B80D000E94E42 /* JRTableViewManager.m in Sources */,
 				049CA4C4247E03FE0024A130 /* AppDelegate.m in Sources */,
-				049CA4EA247E04780024A130 /* JRTableViewCell.m in Sources */,
+				DABD2DEE248B80D000E94E42 /* JRTableViewCell.m in Sources */,
 				049CA4D5247E03FF0024A130 /* main.m in Sources */,
-				049CA4EB247E04780024A130 /* JRTableViewHeaderFooterView.m in Sources */,
-				049CA4EE247E04780024A130 /* JRTableViewSection.m in Sources */,
-				049CA4EC247E04780024A130 /* JRTableViewHeaderFooterItem.m in Sources */,
+				DABD2DEF248B80D000E94E42 /* JRTableViewHeaderFooterView.m in Sources */,
+				DABD2DF2248B80D000E94E42 /* JRTableViewSection.m in Sources */,
+				DABD2DF0248B80D000E94E42 /* JRTableViewHeaderFooterItem.m in Sources */,
 				049CA4C7247E03FE0024A130 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
