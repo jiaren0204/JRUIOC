@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "JRUIOC"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "__"
   s.description  = '构建tableview,collectionview,弹出框 oc版本'
 
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author             = { "梁嘉仁" => "50839393@qq.com" }
   s.platform     = :ios, "11.0"
 
-  s.source       = { :git => "https://github.com/jiaren0204/JRUIOC.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/jiaren0204/JRUIOC.git", :tag => "0.1.1" }
 
   s.source_files  = "JRUIOC/Classes/*.h"
 
@@ -33,10 +33,10 @@ Pod::Spec.new do |s|
     ss.source_files = 'JRUIOC/Classes/Util/*.{h,m}'
   end
 
-  # s.subspec 'JRPopUpView' do |ss|
-  #   ss.source_files = 'JRUIOC/Classes/JRPopUpView/*.{h,m}'
-  #   ss.dependency 'JRUIOC/Classes/Util'
-  # end
+  s.subspec 'JRPopUpView' do |ss|
+    ss.source_files = 'JRUIOC/Classes/JRPopUpView/*.{h,m}'
+    ss.dependency 'JRUIOC/Classes/Util'
+  end
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
