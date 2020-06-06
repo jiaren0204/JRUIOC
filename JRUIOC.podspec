@@ -6,23 +6,23 @@
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |spec|
-  spec.name         = "JRUIOC"
-  spec.version      = "0.0.7"
-  spec.summary      = "__"
-  spec.description  = '构建tableview,collectionview,弹出框 oc版本'
+Pod::Spec.new do |s|
+  s.name         = "JRUIOC"
+  s.version      = "0.0.8"
+  s.summary      = "__"
+  s.description  = '构建tableview,collectionview,弹出框 oc版本'
 
-  spec.homepage     = "https://github.com/jiaren0204/JRUIOC"
-  spec.license      = "MIT"
-  spec.author             = { "梁嘉仁" => "50839393@qq.com" }
-  spec.platform     = :ios, "11.0"
+  s.homepage     = "https://github.com/jiaren0204/JRUIOC"
+  s.license      = "MIT"
+  s.author             = { "梁嘉仁" => "50839393@qq.com" }
+  s.platform     = :ios, "11.0"
 
-  spec.source       = { :git => "https://github.com/jiaren0204/JRUIOC.git", :tag => "0.0.7" }
+  s.source       = { :git => "https://github.com/jiaren0204/JRUIOC.git", :tag => "0.0.8" }
 
-  spec.source_files  = "JRUIOC/Classes/JRUIOC.h"
+  s.source_files  = "JRUIOC/Classes/*.h"
 
-  spec.subspec 'JRTableViewManager' do |ss|
-    table.source_files = 'JRUIOC/JRUIOC/JRTableViewManager/**/*'
+  s.subspec 'JRTableViewManager' do |ss|
+    ss.source_files = 'JRUIOC/Classes/JRTableViewManager/*.{h,m}'
   end
   # spec.source_files  = "JRUIOC/JRUIOC", "JRUIOC/JRUIOC/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
