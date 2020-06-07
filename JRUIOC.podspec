@@ -28,15 +28,18 @@ Pod::Spec.new do |s|
   s.subspec 'JRCollectionViewManager' do |ss|
     ss.source_files = 'JRUIOC/Classes/JRCollectionViewManager/**/*.{h,m}'
   end
-
+  
   s.subspec 'Util' do |ss|
     ss.source_files = 'JRUIOC/Classes/Util/*.{h,m}'
   end
 
   s.subspec 'JRPopUpView' do |ss|
+    ss.dependency 'JRUIOC/Util'
+
     ss.source_files = 'JRUIOC/Classes/JRPopUpView/*.{h,m}'
-    ss.dependency 'JRUIOC/Classes/Util'
   end
+
+
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
