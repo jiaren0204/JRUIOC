@@ -6,7 +6,7 @@
 //  Copyright © 2020 jiaren. All rights reserved.
 //
 
-// 0.1.1
+// 0.1.2
 
 #ifndef JRUIOC_h
 #define JRUIOC_h

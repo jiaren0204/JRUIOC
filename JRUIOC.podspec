@@ -8,16 +8,16 @@
 
 Pod::Spec.new do |s|
   s.name         = "JRUIOC"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "__"
   s.description  = '构建tableview,collectionview,弹出框 oc版本'
 
   s.homepage     = "https://github.com/jiaren0204/JRUIOC"
   s.license      = "MIT"
   s.author             = { "梁嘉仁" => "50839393@qq.com" }
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "10.0"
 
-  s.source       = { :git => "https://github.com/jiaren0204/JRUIOC.git", :tag => "0.1.1" }
+  s.source       = { :git => "https://github.com/jiaren0204/JRUIOC.git", :tag => "0.1.2" }
 
   s.source_files  = "JRUIOC/Classes/*.h"
 
