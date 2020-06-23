@@ -358,6 +358,16 @@ typedef NS_ENUM(NSInteger, JRSectionInfoValue) {
     return self;
 }
 
+- (void)setManager:(JRCollectionViewManager *)manager
+{
+    _manager = manager;
+    
+    __weak typeof(self) weakSelf = self;
+    [manager addCollectionEventListenerWithId:self name:(JR_CollectionViewEventDataDidChanged) block:^{
+        [weakSelf.layoutTool clean];
+    }];
+}
+
 - (void)prepareLayout
 {
     [super prepareLayout];

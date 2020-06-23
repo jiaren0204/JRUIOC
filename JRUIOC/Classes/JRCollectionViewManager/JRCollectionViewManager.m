@@ -9,6 +9,9 @@
 #import "JRCollectionViewManager.h"
 
 @interface JRCollectionViewManager()<UICollectionViewDataSource, UICollectionViewDelegate>
+
+/** 系统事件调用 */
+@property (nonatomic, strong) NSMutableDictionary<NSString *, NSMutableDictionary<NSNumber *, void(^)(void)> *> *sysEventDic;
 ///** cell事件调用 */
 @property (nonatomic, strong) NSMutableDictionary<NSString *, JRCollectionViewManagerCellEventBlock> *cellEventDic;
 
@@ -48,6 +51,7 @@
     manager.cellEventDic = [NSMutableDictionary new];
     manager.headerFooterEventDic = [NSMutableDictionary new];
     manager.sections = [NSMutableArray new];
+    manager.sysEventDic = [NSMutableDictionary new];
     
 
     if ([collectionView.collectionViewLayout isKindOfClass:[JRCustomSizeLayout class]]) {
@@ -99,21 +103,74 @@
 - (void)add:(JRCollectionViewSection *)section
 {
     section.manager = self;
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
     [self.sections addObject:section];
 }
 
 - (void)remove:(JRCollectionViewSection *)section
 {
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
     [self.sections removeObject:section];
 }
 
 - (void)removeAllSections
 {
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
     [self.sections removeAllObjects];
+}
+
+- (void)insertItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths
+{
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
+    [self.collectionView insertItemsAtIndexPaths:indexPaths];
+}
+
+- (void)deleteItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths
+{
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
+    [self.collectionView deleteItemsAtIndexPaths:indexPaths];
+}
+
+- (void)insertSections:(NSIndexSet *)sections
+{
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
+    [self.collectionView insertSections:sections];
+}
+
+- (void)deleteSections:(NSIndexSet *)sections
+{
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
+    [self.collectionView deleteSections:sections];
+}
+
+- (void)reloadSections:(NSIndexSet *)sections
+{
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
+    [self.collectionView reloadSections:sections];
+}
+
+- (void)moveSection:(NSInteger)section toSection:(NSInteger)newSection
+{
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
+    [self.collectionView moveSection:section toSection:newSection];
+}
+
+- (void)moveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath
+{
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
+    [self.collectionView moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];
+}
+
+- (void)reloadItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths
+{
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
+    [self.collectionView reloadItemsAtIndexPaths:indexPaths];
 }
 
 - (void)reload
 {
+    [self sysEventCall:JR_CollectionViewEventReloadData];
+    [self sysEventCall:JR_CollectionViewEventDataDidChanged];
     [self.collectionView reloadData];
 }
 
@@ -128,6 +185,38 @@
 - (void)registerCellEventWithName:(NSString *)name block:(JRCollectionViewManagerCellEventBlock)block
 {
     self.cellEventDic[name] = block;
+}
+
+// 系统事件处理
+- (void)addCollectionEventListenerWithId:(id)Id name:(JR_CollectionViewEvent)name block:(void(^)(void))block
+{
+    NSString *key = [NSString stringWithFormat:@"%p", Id];
+    
+    NSMutableDictionary *event = self.sysEventDic[key];
+    
+    if (event == nil) {
+        event = [NSMutableDictionary new];
+    }
+    
+    event[@(name)] = block;
+}
+
+- (void)removeCollectionEventWithId:(id)Id
+{
+    [self.sysEventDic removeAllObjects];
+}
+
+- (void)sysEventCall:(JR_CollectionViewEvent)name
+{
+    [self.sysEventDic enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSMutableDictionary<NSNumber *,void (^)(void)> * _Nonnull event, BOOL * _Nonnull stop) {
+
+        [event enumerateKeysAndObjectsUsingBlock:^(NSNumber * _Nonnull key, void (^ _Nonnull callback)(void), BOOL * _Nonnull stop) {
+            if (callback) {
+                callback();
+            }
+        }];
+    }];
+
 }
 
 - (void)performCellEventWithName:(NSString *)name item:(JRCollectionViewItem *)item msg:(id)msg

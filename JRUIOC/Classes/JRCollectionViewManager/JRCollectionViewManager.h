@@ -13,6 +13,11 @@
 #import "JRCollectionViewCell.h"
 #import "JRCollectionHeaderFooterView.h"
 
+typedef NS_ENUM(NSInteger, JR_CollectionViewEvent) {
+    JR_CollectionViewEventReloadData = 0,
+    JR_CollectionViewEventDataDidChanged
+};
+
 
 typedef void(^JRCollectionViewManagerCellEventBlock)(JRCollectionViewItem *item, id msg);
 typedef void(^JRCollectionViewManagerHeaderFooterEventBlock)(JRCollectionViewHeaderFooterItem *item, id msg);
@@ -40,10 +45,25 @@ typedef void(^JRCollectionViewManagerHeaderFooterEventBlock)(JRCollectionViewHea
 
 @property (nonatomic, copy) void (^didEndScrollingCallback)(JRCollectionViewItem *item, NSInteger row);
 
+/// 数据源处理
 - (void)add:(JRCollectionViewSection *)section;
 - (void)remove:(JRCollectionViewSection *)section;
 - (void)removeAllSections;
+
+- (void)insertItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths;
+- (void)deleteItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths;
+- (void)insertSections:(NSIndexSet *)sections;
+- (void)deleteSections:(NSIndexSet *)sections;
+- (void)reloadSections:(NSIndexSet *)sections;
+- (void)moveSection:(NSInteger)section toSection:(NSInteger)newSection;
+- (void)moveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath;
+- (void)reloadItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths;
+
 - (void)reload;
+
+// 系统事件处理
+- (void)addCollectionEventListenerWithId:(id)Id name:(JR_CollectionViewEvent)name block:(void(^)(void))block;
+- (void)removeCollectionEventWithId:(id)Id;
 
 
 - (void)registerDidEndScrollingEvent:(void(^)(JRCollectionViewItem *item, NSInteger row))callback;

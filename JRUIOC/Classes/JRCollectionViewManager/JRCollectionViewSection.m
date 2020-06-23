@@ -71,7 +71,7 @@
     item.manager = _manager;
     
     [self.items insertObject:item atIndex:[self.items indexOfObject:afterItem] + 1];
-    [_manager.collectionView insertItemsAtIndexPaths:@[item.indexPath]];
+    [_manager insertItemsAtIndexPaths:@[item.indexPath]];
 }
 
 - (void)insertItems:(NSArray<JRCollectionViewItem *> *)items afterItem:(JRCollectionViewItem *)afterItem
@@ -91,7 +91,7 @@
         [indexPaths addObject:[NSIndexPath indexPathForRow:(newFirstIndex + i) inSection:afterItem.indexPath.section]];
     }
     
-    [_manager.collectionView insertItemsAtIndexPaths:indexPaths];
+    [_manager insertItemsAtIndexPaths:indexPaths];
 }
 
 - (void)deleteItems:(NSArray<JRCollectionViewItem *> *)items
@@ -104,13 +104,13 @@
     
     [self.items removeObjectsInArray:items];
     
-    [_manager.collectionView deleteItemsAtIndexPaths:indexPaths];
+    [_manager deleteItemsAtIndexPaths:indexPaths];
 }
 
 - (void)reload
 {
     if ([_manager.sections containsObject:self]) {
-        [_manager.collectionView reloadSections:[NSIndexSet indexSetWithIndex:self.index]];
+        [_manager reloadSections:[NSIndexSet indexSetWithIndex:self.index]];
     }
 }
 
@@ -124,7 +124,7 @@
             [indexPaths addObject:[NSIndexPath indexPathForItem:index inSection:self.index]];
         }
 
-        [_manager.collectionView reloadItemsAtIndexPaths:indexPaths];
+        [_manager reloadItemsAtIndexPaths:indexPaths];
     }
 }
 

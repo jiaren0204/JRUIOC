@@ -186,8 +186,8 @@
 		DABD2E10248B918F00E94E42 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				DABD2E11248B918F00E94E42 /* JRCustomSizeLayout.m */,
 				DABD2E12248B918F00E94E42 /* JRCustomSizeLayout.h */,
+				DABD2E11248B918F00E94E42 /* JRCustomSizeLayout.m */,
 			);
 			path = Layout;
 			sourceTree = "<group>";

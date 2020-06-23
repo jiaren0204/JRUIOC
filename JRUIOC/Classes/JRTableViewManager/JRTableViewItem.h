@@ -3,8 +3,8 @@
 
 @class JRTableViewManager, JRTableViewSection;
 
-#define JR_ITEM_CONVERT(itemName) itemName *item = (itemName *)self.item;
-#define JR_ITEM_CONVERT_SELF(itemName, self) itemName *item = (itemName *)self.item;
+#define JR_TABLE_ITEM_CONVERT(itemName) itemName *item = (itemName *)self.item;
+#define JR_TABLE_ITEM_CONVERT_SELF(itemName, self) itemName *item = (itemName *)self.item;
 
 NS_ASSUME_NONNULL_BEGIN
 

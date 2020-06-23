@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define JR_COLLECT_ITEM_CONVERT(itemName) itemName *item = (itemName *)self.item;
+#define JR_COLLECT_ITEM_CONVERT_SELF(itemName, self) itemName *item = (itemName *)self.item;
+
 @class JRCollectionViewManager, JRCollectionViewSection;
 
 NS_ASSUME_NONNULL_BEGIN
