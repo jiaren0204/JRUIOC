@@ -62,8 +62,8 @@ typedef void(^JRCollectionViewManagerHeaderFooterEventBlock)(JRCollectionViewHea
 - (void)reload;
 
 // 系统事件处理
-- (void)addCollectionEventListenerWithId:(id)Id name:(JR_CollectionViewEvent)name block:(void(^)(void))block;
-- (void)removeCollectionEventWithId:(id)Id;
+- (void)addCollectionEventListenerWithName:(JR_CollectionViewEvent)name block:(void(^)(void))block;
+- (void)removeCollectionEvent:(id)Id;
 
 
 - (void)registerDidEndScrollingEvent:(void(^)(JRCollectionViewItem *item, NSInteger row))callback;

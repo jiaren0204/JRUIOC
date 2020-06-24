@@ -25,7 +25,8 @@ typedef NS_ENUM(NSInteger, JRPopUpAppearType) {
 @property (nonatomic, strong) UIColor *bgColor;
 /** 动画驱动器 */
 @property (nonatomic, strong) JRPopupViewBaseAnimator *animator;
-
+/** 是否取消之前存在的view */
+@property (nonatomic, assign) BOOL dismissExistViews;
 
 @end
 

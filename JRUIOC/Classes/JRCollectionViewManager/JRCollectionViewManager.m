@@ -11,7 +11,7 @@
 @interface JRCollectionViewManager()<UICollectionViewDataSource, UICollectionViewDelegate>
 
 /** 系统事件调用 */
-@property (nonatomic, strong) NSMutableDictionary<NSString *, NSMutableDictionary<NSNumber *, void(^)(void)> *> *sysEventDic;
+@property (nonatomic, strong) NSMutableDictionary<NSNumber *, void(^)(void)> *sysEventDic;
 ///** cell事件调用 */
 @property (nonatomic, strong) NSMutableDictionary<NSString *, JRCollectionViewManagerCellEventBlock> *cellEventDic;
 
@@ -188,35 +188,26 @@
 }
 
 // 系统事件处理
-- (void)addCollectionEventListenerWithId:(id)Id name:(JR_CollectionViewEvent)name block:(void(^)(void))block
+- (void)addCollectionEventListenerWithName:(JR_CollectionViewEvent)name block:(void(^)(void))block
 {
-    NSString *key = [NSString stringWithFormat:@"%p", Id];
-    
-    NSMutableDictionary *event = self.sysEventDic[key];
-    
-    if (event == nil) {
-        event = [NSMutableDictionary new];
-    }
-    
-    event[@(name)] = block;
+    self.sysEventDic[@(name)] = block;
 }
 
-- (void)removeCollectionEventWithId:(id)Id
+- (void)removeCollectionEvent
 {
     [self.sysEventDic removeAllObjects];
 }
 
 - (void)sysEventCall:(JR_CollectionViewEvent)name
 {
-    [self.sysEventDic enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSMutableDictionary<NSNumber *,void (^)(void)> * _Nonnull event, BOOL * _Nonnull stop) {
-
-        [event enumerateKeysAndObjectsUsingBlock:^(NSNumber * _Nonnull key, void (^ _Nonnull callback)(void), BOOL * _Nonnull stop) {
+    [self.sysEventDic enumerateKeysAndObjectsUsingBlock:^(NSNumber * _Nonnull key, void (^ _Nonnull callback)(void), BOOL * _Nonnull stop) {
+        
+        if (name == key.integerValue) {
             if (callback) {
                 callback();
             }
-        }];
+        }
     }];
-
 }
 
 - (void)performCellEventWithName:(NSString *)name item:(JRCollectionViewItem *)item msg:(id)msg

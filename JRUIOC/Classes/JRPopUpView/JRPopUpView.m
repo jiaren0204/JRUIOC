@@ -54,6 +54,18 @@
     }
 }
 
++ (void)dismissWithContainer:(UIView *)containerView targetClass:(Class)targetClass animated:(BOOL)animated
+{
+    for (UIView *view in containerView.subviews) {
+        if ([view isKindOfClass:[JRPopUpView class]]) {
+            JRPopUpView *popUp = (JRPopUpView *)view;
+            if ([popUp.contentView isKindOfClass:targetClass]) {
+                [popUp dismiss:animated completion:^{}];
+            }
+        }
+    }
+}
+
 + (instancetype)popUpWithContentView:(JRPopUpContentView *)contentView attri:(JRPopAttributes *)attri
 {
     JRPopUpView *popUpView = [[JRPopUpView alloc] initWithFrame:attri.containerView.bounds];
@@ -109,8 +121,8 @@
     
     [self addSubview:self.backgroundView];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 }
 
 #pragma mark - 控件布局
@@ -131,34 +143,28 @@
     self.statusblockWithAnim = statusblock;
 }
 
-- (BOOL)checkAddPopUpView:(BOOL)animated completion:(void(^)(void))completion
+- (void)checkAddPopUpView
 {
     for (UIView *view in self.containerView.subviews) {
         if ([view isEqual:self]) {
             JRPopUpView *popUp = (JRPopUpView *)view;
             [popUp dismiss:YES completion:^{
-//                [weakSelf display:animated completion:completion];
+
             }];
-            return YES;
         }
         
         if ([view isKindOfClass:[JRPopUpView class]]) {
             JRPopUpView *popUp = (JRPopUpView *)view;
             [popUp removeFromSuperview];
-            [popUp dismiss:NO completion:nil];
-            [self display:animated completion:completion];
-
-            return YES;
+            [popUp dismiss:YES completion:nil];
         }
     }
-    
-    return NO;
 }
 
 - (void)display:(BOOL)animated completion:(void(^)(void))completion
 {
-    if ([self checkAddPopUpView:animated completion:completion]) {
-        return;
+    if (_attri.dismissExistViews) {
+        [self checkAddPopUpView];
     }
 
     if (_isAnimating) { return; }

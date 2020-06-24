@@ -363,7 +363,7 @@ typedef NS_ENUM(NSInteger, JRSectionInfoValue) {
     _manager = manager;
     
     __weak typeof(self) weakSelf = self;
-    [manager addCollectionEventListenerWithId:self name:(JR_CollectionViewEventDataDidChanged) block:^{
+    [manager addCollectionEventListenerWithName:(JR_CollectionViewEventDataDidChanged) block:^{
         [weakSelf.layoutTool clean];
     }];
 }

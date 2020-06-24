@@ -14,8 +14,19 @@
 
 + (instancetype)popUpWithContentView:(JRPopUpContentView *)contentView attri:(JRPopAttributes *)attri;
 
+
+/// 关闭所有的弹框
+/// @param containerView JRPopAttributes -> containerView
 + (void)dismissAllContentViewWithContainer:(UIView *)containerView animated:(BOOL)animated;
 
+
+/// 关闭指定的类的弹出框
+/// @param containerView JRPopAttributes -> containerView
+/// @param targetClass 弹出框的类
++ (void)dismissWithContainer:(UIView *)containerView targetClass:(Class)targetClass animated:(BOOL)animated;
+
+
+/// 监听方法
 - (void)observeStatusChanged:(void(^)(BOOL isPresent))statusblock;
 - (void)observeStatusChangedWithAnim:(void(^)(BOOL isPresent))statusblock;
 
